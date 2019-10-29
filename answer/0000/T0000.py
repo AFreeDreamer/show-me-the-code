@@ -10,7 +10,6 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
 
-
 os.chdir(os.path.split(os.path.realpath(__file__))[0])
 
 # 图片路径和名称，非工作目录使用绝对路径或相对路径
