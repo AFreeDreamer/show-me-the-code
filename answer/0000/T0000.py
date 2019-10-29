@@ -8,7 +8,8 @@
 # 网上案例：https://www.jianshu.com/p/a21238b2d2d1?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
 
 from PIL import Image, ImageDraw, ImageFont
-import os 
+import os
+
 
 os.chdir(os.path.split(os.path.realpath(__file__))[0])
 
@@ -32,13 +33,13 @@ print(fontsize)
 
 
 # 创建Font对象
-font=ImageFont.truetype('arial.ttf', fontsize)
+font = ImageFont.truetype('arial.ttf', fontsize)
 
 # 填充颜色
-fillcolor="#ff0000"
+fillcolor = "#ff0000"
 
 # 图片填充
-draw.text((width - fontsize, 0), '1', font = font, fill = fillcolor)
+draw.text((width - fontsize, 0), '1', font=font, fill=fillcolor)
 
 # 保存输出
 im.save('r.png')
