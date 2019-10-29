@@ -8,13 +8,12 @@
 # 网上案例：https://www.jianshu.com/p/a21238b2d2d1?utm_campaign=maleskine&utm_content=note&utm_medium=seo_notes&utm_source=recommendation
 
 from PIL import Image, ImageDraw, ImageFont
-import os
+import os 
 
 os.chdir(os.path.split(os.path.realpath(__file__))[0])
 
 # 图片路径和名称，非工作目录使用绝对路径或相对路径
 imagepath = 'lfxx.png'
-
 
 # 读入图片
 im = Image.open(imagepath)
