@@ -1,25 +1,15 @@
-import random
 import string
+import random
 
 
-def GenKey(length):
-    chars = string.ascii_letters + string.digits
-    return ''.join([random.choice(chars) for i in range(length)])
+def genKey(length=20):
+    chars=string.ascii_letters+string.digits
+    return ''.join(random.choices(chars,k=length))
 
 
-def SaveKey(content):
-    f = open('Result Key.txt', 'a')
-    f.write(content)
-    f.write('\n')
-    f.close()
+def getKeys(cnt=10,length=20):
+    for i in range(cnt):
+        print(genKey(length))
 
+getKeys(cnt=10,length=20)
 
-if __name__ == '__main__':
-    for i in range(20):
-        value = GenKey(20)
-        print (value)
-        SaveKey(value)
-
-chars = string.ascii_letters + string.digits
-result = ''.join([random.choice(chars) for i in range(20)])
-print (result)
