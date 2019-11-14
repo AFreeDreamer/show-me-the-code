@@ -8,6 +8,10 @@ import random
     时间：
 '''
   
+        warnings.warn(
+            "The _imaging extension was built for another version of Python.",
+            RuntimeWarning,
+        )
 
 # keys=[]
 # for i in range(cnt):

@@ -5,6 +5,7 @@
 import glob
 import os
 import re
+from PIL import Image
 
 
 def getFiles(dir):
@@ -37,6 +38,7 @@ def sourceStat(filename):
 
 
 if __name__ == "__main__":
+    # dir = r'D:\Program Files\Python\Python37\Lib\site-packages\PIL'
     dir = r'.\code'
     d_sum={'totalline':0,'blankline':0,'commentline':0,'codeline':0}
     for filename in getFiles(dir):
